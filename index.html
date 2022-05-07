@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>FONTAQUA Instalaciones y Adecuaciones</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="modelo-5.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-image: url("Cabecera.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #AFD9F5;
+    margin-top: 50px;
+
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 80px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #0f72f9;
+    font-size: 50px;
+  }
+  .logo {
+    color: #0f72f9;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #0f72f9;
+  }
+  .carousel-indicators li {
+    border-color: #0f72f9;
+  }
+  .carousel-indicators li.active {
+    background-color: #0f72f9;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #0f72f9; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #0f72f9;
+    background-color: #fff !important;
+    color: #0f72f9;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #0f72f9 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #3989f6;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #70a9f7;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #0f72f9;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">FONTAQUA</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">INICIO</a></li>
+        <li><a href="#services">SERVICIOS</a></li>
+        <li><a href="#portfolio">GALERÍA</a></li>
+        <li><a href="#contact">CONTACTO</a></li>
+        <li><a href="#pricing">LEGAL</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1><br></h1> 
+  <p><br></p> 
+  <p><br></p> 
+</div>
+
+<!-- Inicio -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Inicio</h2><br>
+      <h4>Bienvenido a FONTAQUA Instalaciones y Adecuaciones S.L.
+      Somos una empresa líder en servicios de Fontanería, localizada en Arcos de la Frontera (Cádiz)</h4><br>
+      <p>
+        Contacte con nosotros mediante el teléfono: <b>956711000</b>; o también mediante nuestro email: <b>fontaqua@fontaqua.es</p>
+      <br><button class="btn btn-default btn-lg"><a href="#contact">Contáctenos</a></button>
+    </div>
+    <div class="col-sm-4">
+      <img src="Logocontacto.jpg" class="w3-image w3-greyscale-min" width="90%" height="200">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-tint logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Nuestra empresa</h2><br>
+      <h4><strong>FONTAQUA</strong> es una empresa dedicada tanto a instalaciones como a mantenimientos de Fontanería, Calefacción y 
+        Servicios de Obras mayor o menor que pueda necesitar.
+      Realizamos instalaciones en reformas, obra nueva e industrial. Nuestra profesionalidad, junto con la utilización de las primeras 
+      marcas, nos permite dar una garantía a nuestros trabajos insuperable.
+      Nuestra amplia experiencia y excelencia profesional nos permite poder asesorarle en todo momento y con detalle sobre su proyecto, 
+      incluyendo presupuesto sin compromiso.  No dude en ponerse en contacto con nosotros y le daremos la mejor solución a sus necesidades.</h4><br>
+      <p><strong><h3>Especialistas en Instalaciones de Agua.</h3></strong> El fin de una instalación de suministro de agua es aportar y 
+      distribuir el agua a los puntos de consumo dentro de los edificios. Otra función es alimentar el sistema de calentamiento de agua para 
+      usos sanitarios. A partir del punto donde se prepara el agua caliente, hay también una red paralela y de características semejantes a la de agua 
+      fría, para la distribución de agua caliente.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Servicios -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICIOS</h2>
+  <h4>¿Qué ofrecemos?</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>FONTANERÍA</h4>
+      <p>La calidad del agua en la vivienda, especialmente para consumo humano, es una prioridad</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-warning-sign logo-small"></span>
+      <h4>CONSTRUCCIÓN Y OBRAS</h4>
+      <p>En FONTAQUA contamos con personal propio y empresas colaboradoras para cualquier tipo de servicio asociado a la construcción en sus diferentes ramas</p>
+    </div>
+    <div class="col-sm-4">
+      <span class=" glyphicon glyphicon-leaf  logo-small"></span>
+      <h4>ENERGÍAS RENOVABLES</h4>
+      <p>Se estima que, por término medio, el agua caliente de uso sanitario supone cerca del 25% del consumo energético de una vivienda y por ello constituye un interesante capítulo de ahorro</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-flash logo-small"></span>
+      <h4>ELECTRICIDAD</h4>
+      <p>En FONTAQUA contamos con personal propio y empresas colaboradoras para cualquier tipo de servicio que requiera una instalación eléctrica, ya sea de uno o varios circuitos eléctricos</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-resize-small logo-small"></span>
+      <h4>AIRE COMPRIMIDO</h4>
+      <p>El aire comprimido tiene que distribuirse con un volumen suficiente, la calidad y la presión adecuadas para propulsar correctamente los componentes que utilizan el aire comprimido</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-fire logo-small"></span>
+      <h4>CLIMATIZACIÓN</h4>
+      <p>En FONTAQUA contamos con personal propio y empresas colaboradoras para cualquier tipo de servicio que requiera una instalación de climatización ya sea a nivel vivienda, edificio, industrial…</p>
+    </div>
+  </div>
+</div>
+
+<!-- Galería de trabajos -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>GALERÍA</h2><br>
+  <h4>Algunos de nuestros trabajos</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Trabajo1.jpg" alt="Trabajo1" width="400" height="300">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Trabajo3.jpg" alt="Trabajo3" width="400" height="300">
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="Trabajo2.jpg" alt="Trabajo2" width="400" height="300">
+      </div>
+    </div>
+  </div><br>
+  
+
+  <!-- Comentarios de los clientes -->
+  <h2>La opinión de nuestros clientes</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Muy buena empresa de fontanería"<br><span>Antonio Juan Vera, Cliente - Vía reseña de Google</span></h4>
+      </div>
+      <!-- 
+        <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+        </div>
+          <div class="item">
+            <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+          </div>
+        </div> 
+      -->
+
+    <!-- Controles del slider -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+</div>
+
+<!--Formulario de contacto -->
+<div id="contact" class="container-fluid" style="background-color: white">
+  <form action="mailto:fontaqua@fontaqua.es" method="POST" enctype="text/plain">
+  <h2 class="text-center">CONTACTE CON NOSOTROS</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Póngase en contacto con nosotros y le responderemos lo antes posible</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Arcos de la Frontera, Cádiz</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 956711000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> fontaqua@fontaqua.es</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="Nombre " placeholder="Nombre" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="Correo " placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="Mensaje " placeholder="Tu mensaje..." rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </form>
+</div>
+
+
+<!-- Contenedor de las condiciones legales -->
+<div id="pricing" class="container-fluid bg-grey">
+  <div class="text-center">
+    <h2>LEGAL</h2>
+    <h4>Declaración de condiciones legales y uso de cookies</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Aviso Legal y LOPD</h1>
+        </div>
+        <div class="panel-body">
+          <p>Declaración de Aviso Legal y Ley Orgánica de portección de Datos de Carácter Personal</p>
+        </div>
+        <div>
+          <form action="lopd.html">
+          <p><button type="submit" style="background-color: rgb(192, 218, 233)" class="btn btn-lg" formaction="lopd.html">Consulta</button></p>
+          </form>
+        </div>       
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Cookies</h1>
+        </div>
+        <div class="panel-body">
+          <p>Declaración de la Política de Cookies</p>
+        </div>
+        <div>
+            <form action="cookies.html">
+            <p><button type="submit"  style="background-color: rgb(192, 218, 233)" class="btn btn-lg" formaction="cookies.html">Consulta</button></p>
+            </form>
+          </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Más acerca de Cookies</h1>
+        </div>
+        <div class="panel-body">
+          <p>Aquí puede consultar cómo manipular las cookies de nuestra página web en su dispositivo</p>
+        </div>
+        <div>
+            <form action="cookies2.html">
+            <p><button type="submit" style="background-color: rgb(192, 218, 233)" class="btn btn-lg" formaction="cookies2.html">Consulta</button></p>
+            </form>
+          </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+<footer class="container-fluid text-center" style="background-color: white">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>© Copyright 2019 FONTAQUA <a href="https://www.w3schools.com" title="Visit w3schools">www.fontaqua.es</a>
+    <br>Web diseñada por arevmedia98@gmail.com</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>

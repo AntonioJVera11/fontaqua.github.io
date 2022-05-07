@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>FONTAQUA Instalaciones y Adecuaciones</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="modelo-5.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-image: url("Cabecera.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #AFD9F5;
+    margin-top: 50px;
+
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 80px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #0f72f9;
+    font-size: 50px;
+  }
+  .logo {
+    color: #0f72f9;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #0f72f9;
+  }
+  .carousel-indicators li {
+    border-color: #0f72f9;
+  }
+  .carousel-indicators li.active {
+    background-color: #0f72f9;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #0f72f9; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #0f72f9;
+    background-color: #fff !important;
+    color: #0f72f9;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #0f72f9 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #3989f6;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #70a9f7;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #000000 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #0f72f9;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#myPage">FONTAQUA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="www.fontaqua.es">INICIO</a></li>
+                <li><a href="www.fontaqua.es">SERVICIOS</a></li>
+                <li><a href="www.fontaqua.es">GALERÍA</a></li>
+                <li><a href="www.fontaqua.es">CONTACTO</a></li>
+                <li><a href="www.fontaqua.es">LEGAL</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+<div class="jumbotron text-center">
+        <h1><br></h1> 
+        <p><br></p> 
+        <p><br></p> 
+</div>
+
+<div class="container-fluid">
+    <p>
+    
+<h1>Más información sobre las cookies</h1>
+<h2>¿Qué es una cookie?</h2>
+
+Una cookie es un fichero de texto inofensivo que se almacena en su navegador cuando visita casi cualquier página web. La utilidad de la cookie es que la web sea capaz de recordar su visita cuando vuelva a navegar por esa página. Aunque mucha gente no lo sabe las cookies se llevan utilizando desde hace 20 años, cuando aparecieron los primeros navegadores para la World Wide Web.
+<h2>¿Qué NO ES una cookie?</h2>
+
+No es un virus, ni un troyano, ni un gusano, ni spam, ni spyware, ni abre ventanas pop-up.
+<h2>¿Qué información almacena una cookie?</h2>
+
+Las cookies no suelen almacenar información sensible sobre usted, como tarjetas de crédito o datos bancarios, fotografías, su DNI o información personal, etc. Los datos que guardan son de carácter técnico, preferencias personales, personalización de contenidos, etc.
+
+El servidor web no le asocia a usted como persona si no a su navegador web. De hecho, si usted navega habitualmente con Internet Explorer y prueba a navegar por la misma web con Firefox o Chrome verá que la web no se da cuenta que es usted la misma persona porque en realidad está asociando al navegador, no a la persona.
+<h2>¿Qué tipo de cookies existen?</h2>
+
+    Cookies técnicas: Son las más elementales y permiten, entre otras cosas, saber cuándo está navegando un humano o una aplicación automatizada, cuándo navega un usuario anónimo y uno registrado, tareas básicas para el funcionamiento de cualquier web dinámica.
+    Cookies de análisis: Recogen información sobre el tipo de navegación que está realizando, las secciones que más utiliza, productos consultados, franja horaria de uso, idioma, etc.
+    Cookies publicitarias: Muestran publicidad en función de su navegación, su país de procedencia, idioma, etc.
+
+<h2>¿Qué son las cookies propias y las de terceros?</h2>
+
+Las cookies propias son las generadas por la página que está visitando y las de terceros son las generadas por servicios o proveedores externos como Facebook, Twitter, Google, etc.
+<h2>¿Qué ocurre si desactivo las cookies?</h2>
+
+Para que entienda el alcance que puede tener desactivar las cookies le mostramos unos ejemplos:
+
+    No podrá compartir contenidos de esa web en Facebook, Twitter o cualquier otra red social.<br>
+    El sitio web no podrá adaptar los contenidos a sus preferencias personales, como suele ocurrir en las tiendas online.<br>
+    No podrá acceder al área personal de esa web, como por ejemplo Mi cuenta, o Mi perfil o Mis pedidos.<br>
+    Tiendas online: Le será imposible realizar compras online, tendrán que ser telefónicas o visitando la tienda física si es que dispone de ella.<br>
+    No será posible personalizar sus preferencias geográficas como franja horaria, divisa o idioma.<br>
+    El sitio web no podrá realizar analíticas web sobre visitantes y tráfico en la web, lo que dificultará que la web sea competitiva.<br>
+    No podrá escribir en el blog, no podrá subir fotos, publicar comentarios, valorar o puntuar contenidos. La web tampoco podrá saber si usted es un humano o una aplicación automatizada que publica spam.<br>
+    No se podrá mostrar publicidad sectorizada, lo que reducirá los ingresos publicitarios de la web.<br>
+    Todas las redes sociales usan cookies, si las desactiva no podrá utilizar ninguna red social.<br>
+
+<h2>¿Se pueden eliminar las cookies?</h2>
+
+Sí. No sólo eliminar, también bloquear, de forma general o particular para un dominio específico.
+
+Para eliminar las cookies de un sitio web debe ir a la configuración de su navegador y allí podrá buscar las asociadas al dominio en cuestión y proceder a su eliminación.
+<h3>Configuración de cookies para los navegadores más polulares</h3>
+
+A continuación le indicamos cómo acceder a una cookie determinada del navegador Chrome. Nota: estos pasos pueden variar en función de la versión del navegador:
+
+    Vaya a Configuración o Preferencias mediante el menú Archivo o bien pinchando el icono de personalización que aparece arriba a la derecha.
+    Verá diferentes secciones, pinche la opción Mostrar opciones avanzadas.
+    Vaya a Privacidad, Configuración de contenido.
+    Seleccione Todas las cookies y los datos de sitios.
+    Aparecerá un listado con todas las cookies ordenadas por dominio. Para que le sea más fácil encontrar las cookies de un determinado dominio introduzca parcial o totalmente la dirección en el campo Buscar cookies.
+    Tras realizar este filtro aparecerán en pantalla una o varias líneas con las cookies de la web solicitada. Ahora sólo tiene que seleccionarla y pulsar la X para proceder a su eliminación.
+
+Para acceder a la configuración de cookies del navegador Internet Explorer siga estos pasos (pueden variar en función de la versión del navegador):
+
+    Vaya a Herramientas, Opciones de Internet
+    Haga click en Privacidad.
+    Mueva el deslizador hasta ajustar el nivel de privacidad que desee.
+
+Para acceder a la configuración de cookies del navegador Firefox siga estos pasos (pueden variar en función de la versión del navegador):
+
+    Vaya a Opciones o Preferencias según su sistema operativo.
+    Haga click en Privacidad.
+    En Historial elija Usar una configuración personalizada para el historial.
+    Ahora verá la opción Aceptar cookies, puede activarla o desactivarla según sus preferencias.
+
+Para acceder a la configuración de cookies del navegador Safari para OSX siga estos pasos (pueden variar en función de la versión del navegador):
+
+    Vaya a Preferencias, luego Privacidad.
+    En este lugar verá la opción Bloquear cookies para que ajuste el tipo de bloqueo que desea realizar.
+
+Para acceder a la configuración de cookies del navegador Safari para iOS siga estos pasos (pueden variar en función de la versión del navegador):
+
+    Vaya a Ajustes, luego Safari.
+    Vaya a Privacidad y Seguridad, verá la opción Bloquear cookies para que ajuste el tipo de bloqueo que desea realizar.
+
+Para acceder a la configuración de cookies del navegador para dispositivos Android siga estos pasos (pueden variar en función de la versión del navegador):
+
+    Ejecute el navegador y pulse la tecla Menú, luego Ajustes.
+    Vaya a Seguridad y Privacidad, verá la opción Aceptar cookies para que active o desactive la casilla.
+
+Para acceder a la configuración de cookies del navegador para dispositivos Windows Phone siga estos pasos (pueden variar en función de la versión del navegador):
+
+    Abra Internet Explorer, luego Más, luego Configuración
+    Ahora puede activar o desactivar la casilla Permitir cookies.
+
+    </p>
+</div>
+</body>
